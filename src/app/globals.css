@@ -10,6 +10,20 @@
   --accent-strong: #0058b0;
 }
 
+/* Full-screen immersive pages (/projects): no page scroll, no footer, no swipe-to-go-back overscroll.
+   :has() applies from the first server-rendered paint. */
+html:has([data-immersive-stage]) {
+  overscroll-behavior: none;
+}
+
+html:has([data-immersive-stage]) body {
+  overflow: hidden;
+}
+
+html:has([data-immersive-stage]) footer {
+  display: none;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

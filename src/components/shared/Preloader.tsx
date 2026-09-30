@@ -46,7 +46,7 @@ export function Preloader() {
           key="preloader"
           exit={{ y: "-100%" }}
           transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[var(--background)]"
         >
           <motion.p
             initial={{ opacity: 0, y: 10 }}

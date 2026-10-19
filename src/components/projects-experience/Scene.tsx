@@ -16,7 +16,6 @@ import type { NavState } from "./data";
 import { Nebula } from "./Nebula";
 import { ProjectCard } from "./ProjectCard";
 import { createRig, RigContext, useRig } from "./rig";
-import { Robot } from "./Robot";
 
 export interface SceneProps {
   projects: Project[];
@@ -134,7 +133,6 @@ function SceneContents(props: SceneProps & { lowPower: boolean }) {
       <directionalLight position={[-4, 2, -3]} intensity={0.35} color="#cfe0ff" />
 
       <Nebula count={lowPower ? 5000 : 14000} reducedMotion={reducedMotion} />
-      <Robot reducedMotion={reducedMotion} />
       <Tunnel openSlug={openSlug} reducedMotion={reducedMotion} />
 
       {projects.map((project, index) => (

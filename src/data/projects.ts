@@ -44,6 +44,28 @@ export const projects: Project[] = [
     liveUrl: "https://calder-jewels.vercel.app/",
   },
   {
+    slug: "mount-calder",
+    title: "Mount Calder",
+    description:
+      "Proyek 3D interaktif yang menampilkan pemandangan gunung dengan animasi awan dan pencahayaan dinamis. Pengguna dapat menjelajahi lingkungan gunung Calder dari berbagai sudut pandang.",
+    tech: ["Three.js", "React Three Fiber", "TypeScript"],
+    kind: "web",
+    category: "Web — 3D Interaktif",
+    screenshot: "/images/projects/calder-cover.jpg",
+    video: "/videos/projects/calder-1080.mp4",
+  },
+  {
+    slug: "wine-calder",
+    title: "Wine Calder",
+    description:
+      "Aplikasi web untuk koleksi anggur Calder dengan animasi botol anggur 3D yang elegan. Menampilkan detail produk anggur dengan efek visual yang menarik.",
+    tech: ["Next.js", "Three.js", "React Three Fiber", "Tailwind CSS"],
+    kind: "web",
+    category: "Web — 3D Product Showcase",
+    screenshot: "/images/projects/calder-cover.jpg",
+    video: "/videos/projects/calders-1080.mp4",
+  },
+  {
     slug: "dukun",
     title: "Dukun",
     description:
